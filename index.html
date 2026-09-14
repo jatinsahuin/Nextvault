@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexVault | The Operating System for Human Knowledge</title>
+    
+    <meta name="description" content="NexVault is the Operating System for Human Knowledge. An ambient intelligence layer that understands, connects, and synthesizes everything you learn.">
+    <meta name="theme-color" content="#030303">
+    
+    <meta property="og:title" content="NexVault | The Operating System for Human Knowledge">
+    <meta property="og:description" content="An ambient intelligence layer that understands, connects, and synthesizes everything you learn.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexvault.com">
+    <meta property="og:image" content="https://nexvault.com/og-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NexVault | The Operating System for Human Knowledge">
+    
+    <link rel="canonical" href="https://nexvault.com">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <noscript>
+        <div style="background: #8B5CF6; color: white; padding: 1rem; text-align: center; font-family: sans-serif; position: relative; z-index: 9999;">
+            NexVault requires JavaScript to provide the full interactive experience. Please enable it in your browser settings.
+        </div>
+    </noscript>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div id="particle-background" aria-hidden="true">
+        <canvas id="ambient-canvas"></canvas>
+    </div>
+    <div id="ambient-glow" aria-hidden="true"></div>
+    <div id="ambient-cursor-glow" aria-hidden="true"></div>
+
+    <header id="site-header" class="header-container">
+        <nav class="main-nav" aria-label="Main navigation">
+            <div class="logo-container">
+                <a href="#hero" class="site-logo" aria-label="NexVault Home">NexVault</a>
+            </div>
+            
+            <!-- Mobile Toggle -->
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Nav Container -->
+            <div id="mobile-nav" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#introducing-nexvault">Product</a></li>
+                    <li><a href="#memory-engine">Technology</a></li>
+                    <li><a href="#security-privacy">Security</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+                <div class="nav-cta-group">
+                    <a href="#login" class="btn-secondary" role="button">Sign In</a>
+                    <a href="#pricing" class="btn-primary" role="button" aria-label="Request Access to NexVault">Request Access</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero-container">
+            <div class="hero-content">
+                <h1 class="cinematic-headline">The Operating System <br>for Human Knowledge.</h1>
+                <p class="hero-subheadline">It continuously understands everything you learn, remember, connect, and create. It doesn't just store information; it thinks with you.</p>
+                <div class="cta-group">
+                    <button class="btn-primary btn-large">Experience NexVault</button>
+                    <button class="btn-secondary btn-large">Read the Manifesto</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="invisible-crisis" class="section-container text-center">
+            <div class="section-badge">The Invisible Crisis</div>
+            <h2 class="section-title">We don't have an information problem.<br>We have a memory problem.</h2>
+            <p class="section-description">Ideas disappear. Knowledge fragments across dozens of apps. The friction of recalling a brilliant thought you had three years ago is so high that the thought simply dies. You aren't losing data; you are losing connections.</p>
+        </section>
+
+        <section id="information-explosion" class="section-container">
+            <header class="section-header text-center">
+                <h2>The Information Explosion</h2>
+                <p>Humanity generates more data in a day than we once did in a century. Traditional search is reactive. Folders are digital graveyards.</p>
+            </header>
+            
+            <div class="timeline-container">
+                <article class="timeline-card slide-up">
+                    <h3>The Book Era</h3>
+                    <p>Scarcity of information. High retention.</p>
+                </article>
+                <article class="timeline-card slide-up">
+                    <h3>The Internet</h3>
+                    <p>Abundance of information. The beginning of fragmentation.</p>
+                </article>
+                <article class="timeline-card slide-up">
+                    <h3>Social Media</h3>
+                    <p>Algorithmic feeds. High consumption, zero retention.</p>
+                </article>
+                <article class="timeline-card highlight-card slide-up">
+                    <h3>The AI Era</h3>
+                    <p>Infinite leverage, infinite noise. We consume the equivalent of 174 newspapers of data a day.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="human-memory" class="section-container">
+            <div class="grid-layout two-columns">
+                <div class="text-content">
+                    <h2>Human memory hasn't evolved for this.</h2>
+                    <p>Our brains are incredible at understanding abstract ideas but terrible at storing infinite information. This biological bottleneck is holding back human potential.</p>
+                </div>
+                <div class="memory-cards-container">
+                    <div class="memory-card lost slide-up">
+                        <h4>Forgotten Idea</h4>
+                        <p>That genius market gap you noticed in 2024.</p>
+                    </div>
+                    <div class="memory-card disconnected slide-up">
+                        <h4>Disconnected Knowledge</h4>
+                        <p>Failing to link a biology paper to a software architecture problem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="introducing-nexvault" class="section-container text-center">
+            <h2 class="cinematic-title">Enter NexVault.</h2>
+            <p class="manifesto-text">Not a workspace. Not a note-taking app. An external intelligence layer that grows alongside you.</p>
+            <div id="product-mockup-reveal" class="product-reveal-container slide-up">
+                <div class="mockup-frame">
+                <div class="mockup-ui-container" id="mockup-sequence">
+                    <div class="mockup-phase phase-ingest">
+                        <div class="source-pill type-pdf">Neural_Networks.pdf</div>
+                        <div class="source-pill type-yt">Stanford Lecture</div>
+                        <div class="source-pill type-img">Whiteboard.png</div>
+                    </div>
+                    
+                    <div class="mockup-phase phase-process">
+                        <div class="process-ring"></div>
+                        <div class="process-ring delayed"></div>
+                        <span class="process-text">Extracting Concepts...</span>
+                    </div>
+
+                    <div class="mockup-phase phase-graph">
+                        <div class="mini-node node-center">You</div>
+                        <div class="mini-node node-a">Deep Learning</div>
+                        <div class="mini-node node-b">Backpropagation</div>
+                        <svg class="mini-edges">
+                            <line x1="50%" y1="50%" x2="25%" y2="25%" />
+                            <line x1="50%" y1="50%" x2="75%" y2="70%" />
+                        </svg>
+                    </div>
+
+                    <div class="mockup-phase phase-insight">
+                        <div class="insight-glass-card">
+                            <div class="insight-badge">New Epiphany Discovered</div>
+                            <p>Connected concept <strong>"Backpropagation"</strong> from Stanford Lecture to your saved notes from 2028.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="memory-engine" class="section-container">
+            <div class="feature-showcase grid-layout two-columns align-center">
+                <div class="feature-text">
+                    <div class="section-badge">Core Infrastructure</div>
+                    <h2>Memory Engine™</h2>
+                    <p>Continuously analyzes everything you have ever saved. It doesn't rely on keywords or tags. It uses high-dimensional semantic mapping to understand the underlying meaning of your thoughts.</p>
+                    <ul class="feature-list">
+                        <li>Finds hidden relationships automatically.</li>
+                        <li>Surfaces forgotten ideas contextually.</li>
+                        <li>Produces proactive insights before you search.</li>
+                    </ul>
+                </div>
+                <div class="animation-container memory-engine-visual slide-up">
+                    <div class="me-sequence-wrapper">
+                        
+                        <div class="me-layer me-sources">
+                            <div class="me-source item-1">PDF</div>
+                            <div class="me-source item-2">YouTube</div>
+                            <div class="me-source item-3">Voice Note</div>
+                            <div class="me-source item-4">Screenshot</div>
+                            <div class="me-source item-5">Research</div>
+                        </div>
+
+                        <div class="me-layer me-core-layer">
+                            <div class="me-core-glow"></div>
+                            <div class="me-core-center"></div>
+                        </div>
+
+                        <div class="me-layer me-cards-layer">
+                            <svg class="me-connections" preserveAspectRatio="none">
+                                <line class="me-line line-1" x1="50%" y1="50%" x2="20%" y2="20%" />
+                                <line class="me-line line-2" x1="50%" y1="50%" x2="80%" y2="30%" />
+                                <line class="me-line line-3" x1="50%" y1="50%" x2="50%" y2="80%" />
+                            </svg>
+                            <div class="me-card card-1">Deep Learning</div>
+                            <div class="me-card card-2">Stanford Lecture</div>
+                            <div class="me-card card-3">Market Analysis</div>
+                        </div>
+
+                        <div class="me-layer me-insight-layer">
+                            <div class="me-insight-badge">✨ Hidden relationship discovered</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overnight-intelligence" class="section-container">
+            <div class="dashboard-showcase">
+                <header class="section-header text-center">
+                    <div class="section-badge">Nightly Synthesis</div>
+                    <h2>Overnight Intelligence™</h2>
+                    <p>While you sleep, NexVault runs batch-processing on local hardware. It reads yesterday's saves, updates your graph, and prepares your mind for tomorrow.</p>
+                </header>
+                
+                <div class="dashboard-preview-container slide-up">
+                    <div class="morning-brief-card glass-card">
+                        <h3>Good Morning.</h3>
+                        <p class="subtitle">While you were asleep...</p>
+                        <ul class="insight-metrics">
+                            <li><strong>17</strong> new knowledge connections discovered</li>
+                            <li><strong>3</strong> contradictory ideas identified</li>
+                            <li><strong>2</strong> project opportunities found</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="living-knowledge-graph" class="section-container full-width">
+            <div class="graph-header text-center">
+                <h2>The Shape of Your Mind</h2>
+                <p>Navigate your knowledge spatially. See how your ideas cluster, grow, and intersect.</p>
+            </div>
+            
+            <div class="graph-visualization-wrapper slide-up">
+                <canvas id="knowledge-graph-canvas" class="graph-canvas" role="img" aria-label="An interactive visualization of connected knowledge nodes including AI, Neural Networks, and Research Notes."></canvas>
+                <div class="graph-controls" aria-label="Graph zoom controls">
+                    <button class="zoom-in" aria-label="Zoom In">+</button>
+                    <button class="zoom-out" aria-label="Zoom Out">-</button>
+                    <button class="reset-view" aria-label="Reset View">Reset</button>
+                </div>
+            </div>  
+        </section>
+
+        <section id="security-privacy" class="section-container">
+            <header class="section-header text-center">
+                <h2>Your mind is a fortress.</h2>
+                <p>Absolute cognitive peace of mind. We cannot see your thoughts, and neither can anyone else.</p>
+            </header>
+            <div class="security-grid grid-layout three-columns">
+                <article class="compliance-card slide-up">
+                    <h3>Zero-Knowledge Encryption</h3>
+                    <p>End-to-end encryption by default. Your keys never leave your device.</p>
+                </article>
+                <article class="compliance-card slide-up">
+                    <h3>Local-First Compute</h3>
+                    <p>Overnight Intelligence™ runs on your local GPU. No cloud processing required.</p>
+                </article>
+                <article class="compliance-card slide-up">
+                    <h3>Absolute Ownership</h3>
+                    <p>Export everything instantly in open, readable formats. You own your graph.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-container text-center">
+            <header class="section-header">
+                <h2>Choose how your knowledge evolves.</h2>
+                <p>Whether you're learning alone or building with a team, NexVault grows with you.</p>
+            </header>
+            
+            <div class="pricing-grid grid-layout three-columns">
+                <article class="pricing-card slide-up">
+                    <h3>Explorer</h3>
+                    <p class="tier-description">For students, lifelong learners, and curious minds.</p>
+                    <ul class="feature-list pricing-features text-left">
+                        <li>Unlimited Personal Vault</li>
+                        <li>AI Semantic Search</li>
+                        <li>Living Knowledge Graph</li>
+                        <li>Local-First Storage</li>
+                        <li>Free Forever</li>
+                    </ul>
+                    <button class="btn-secondary full-width">Start Free</button>
+                </article>
+                
+                <article class="pricing-card featured-tier slide-up">
+                    <div class="tier-badge">Early Access</div>
+                    <h3>Professional</h3>
+                    <p class="tier-description">For researchers, founders, engineers, and creators.</p>
+                    <ul class="feature-list pricing-features text-left">
+                        <li>Everything in Explorer</li>
+                        <li>Overnight Intelligence™</li>
+                        <li>Deep Knowledge Synthesis</li>
+                        <li>Cross-device Sync</li>
+                        <li>Priority AI Processing</li>
+                        <li>Early Access Features</li>
+                    </ul>
+                    <button class="btn-primary full-width">Request Early Access</button>
+                </article>
+                
+                <article class="pricing-card slide-up">
+                    <h3>Teams</h3>
+                    <p class="tier-description">For organizations building collective intelligence.</p>
+                    <ul class="feature-list pricing-features text-left">
+                        <li>Shared Knowledge Graph</li>
+                        <li>Team Memory</li>
+                        <li>Workspace Intelligence</li>
+                        <li>Role-based Access</li>
+                        <li>Organization Search</li>
+                        <li>Admin Dashboard</li>
+                    </ul>
+                    <button class="btn-secondary full-width">Contact Sales</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Insert directly above the footer -->
+        <section id="final-cta" class="section-container text-center">
+            <div class="final-cta-wrapper slide-up">
+                <h2 class="cinematic-title">Your knowledge is already growing.<br>Give it somewhere to live.</h2>
+                <p class="section-description">Build a memory that grows with you.</p>
+                <div class="cta-group">
+                    <button type="button" class="btn-primary btn-large" id="early-access-btn">
+                        Request Early Access &rarr;
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Early Access Modal -->
+        <div id="early-access-modal" class="early-access-modal" aria-hidden="true">
+            <div class="early-access-backdrop" data-close-early-access></div>
+
+            <div class="early-access-dialog" role="dialog" aria-modal="true" aria-labelledby="early-access-title">
+                <button
+                    type="button"
+                    class="early-access-close"
+                    aria-label="Close early access form"
+                    data-close-early-access
+                >
+                    &times;
+                </button>
+
+                <span class="section-badge">NEXVAULT EARLY ACCESS</span>
+
+                <h2 id="early-access-title">Be there at the beginning.</h2>
+
+                <p>
+                    NexVault is currently being built. Leave your email to express
+                    interest in early access.
+                </p>
+
+                <form id="early-access-form">
+                    <label for="early-access-email">Email address</label>
+
+                    <div class="early-access-input-group">
+                        <input
+                            type="email"
+                            id="early-access-email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <button type="submit" class="btn-primary">
+                            Join
+                        </button>
+                    </div>
+
+                    <p class="early-access-note">
+                        No spam. Just NexVault updates.
+                    </p>
+                </form>
+
+                <div id="early-access-success" class="early-access-success" hidden>
+                    <span class="success-mark">✓</span>
+                    <h3>You're on the list.</h3>
+                    <p>We'll keep you posted as NexVault gets closer to launch.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer" class="footer-container">
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2030 NexVault Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/script.js"></script>
+</body>
+</html>

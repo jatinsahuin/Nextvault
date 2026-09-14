@@ -1,0 +1,1 @@
+name = input ("Good morning", end=", ")
