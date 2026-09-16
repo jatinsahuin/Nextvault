@@ -186,5 +186,18 @@ Refine the pricing section so it feels like a real product offering rather than 
 - Avoided inventing fixed pricing while NexVault is still in the early-access/MVP stage.
 - Improved visual hierarchy, spacing, and card presentation.
 
+## Ticket #009.2 — Final CTA
+**Status:** ✅ Closed
+
+### Goal
+Create a premium, cinematic final call-to-action that elegantly closes the landing page and drives early access requests.
+
+### Changes
+- Added a new dedicated `#final-cta` section immediately above the footer.
+- Implemented a subtle glowing glass container using radial gradients and border styling.
+- Utilized fluid typography for the closing headline ("Your knowledge is already growing...").
+- Connected the primary CTA button to the existing smooth-scroll engine, routing users back to the early-access Pricing tier.
+- Integrated the section with the existing `RevealEngine` (`slide-up`) for seamless scroll-in animations without adding new JavaScript.
+
 ### Result
-The pricing section now feels like part of a real product launch and gives visitors a clear understanding of how NexVault could evolve into different tiers.
+The landing page now concludes with a confident, visually striking finish that naturally guides visitors toward the early access waitlist without relying on fake registration flows.
