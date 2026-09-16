@@ -339,6 +339,7 @@ class InteractionManager {
     }
 
     openMobileMenu() {
+        if (!this.header) return;
         this.header.classList.add('is-menu-open');
         this.toggleBtn.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
@@ -617,9 +618,9 @@ class LivingKnowledgeGraph {
 
             if (dist < 80 * this.dpr) {
                 this.hoveredNode = node;
-                node.targetRadius = 8 * this.dpr;
+                node.targetRadius = 8;
             } else {
-                node.targetRadius = 4 * this.dpr;
+                node.targetRadius = 4;
             }
             node.currentRadius += (node.targetRadius - node.currentRadius) * 0.1;
         });
@@ -645,7 +646,7 @@ class LivingKnowledgeGraph {
         });
 
         this.ctx.shadowBlur = 0;
-        this.ctx.font = `${12 * this.dpr}px -apple-system, BlinkMacSystemFont, "Inter", sans-serif`;
+        this.ctx.font = `12px -apple-system, BlinkMacSystemFont, "Inter", sans-serif`;
         this.ctx.textAlign = 'center';
         
         this.nodes.forEach(node => {
