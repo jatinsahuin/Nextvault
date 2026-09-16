@@ -1,67 +1,49 @@
-# NexVault | The Operating System for Human Knowledge
+# NexVault
 
-**An ambient intelligence layer that understands, connects, and synthesizes everything you learn.**
+**The Operating System for Human Knowledge.**
 
-NexVault is not a note-taking app or a workspace—it is a cognitive extension. It transforms fragmented data into a living, breathing knowledge graph, allowing users to discover hidden relationships between their thoughts automatically.
+NexVault is an ambient intelligence layer designed to understand, connect, and synthesize everything you learn. It is not a note-taking app or a workspace—it is a cognitive extension built to ensure that no brilliant thought is ever lost to the noise of the information explosion.
 
-[View Live Demo](#) | [Read the Vision](VISION.md) | [View Roadmap](ROADMAP.md)
-
----
-
-## 🧠 The Core Concept
-
-Traditional digital memory is reactive; you have to remember where you put a file to find it. NexVault is **proactive**. It uses high-dimensional semantic mapping to surface forgotten ideas contextually, effectively solving the "invisible crisis" of information fragmentation.
-
-### Key Pillars
-- **The Memory Engine™**: Continuous analysis of ingested data to find hidden relationships.
-- **Overnight Intelligence™**: Local-first batch processing that synthesizes your day's learning while you sleep.
-- **Living Knowledge Graph**: A spatial, interactive visualization of your mind's architecture.
+[Live Demo](#) | [Vision](VISION.md) | [Roadmap](ROADMAP.md) | [Changelog](CHANGELOG.md)
 
 ---
 
-## 🚀 Technical Implementation
+## The Core Idea
 
-This project is built with a "performance-first" mindset, avoiding heavy libraries in favor of optimized vanilla implementations to maintain a premium, lag-free experience.
+Digital memory is currently a series of "buckets"—folders, tags, and databases. But knowledge is a web. 
 
-### The Tech Stack
-- **Frontend**: HTML5, CSS3 (Custom Properties, Glass-morphism), Vanilla JavaScript (ES6+).
-- **Visuals**: HTML5 Canvas API for the Knowledge Graph and Ambient Particle systems.
-- **Build Tool**: [Vite](https://vitejs.dev/) for lightning-fast development and bundling.
-
-### Engineering Highlights
-- **Custom Motion System**: A bespoke interaction layer featuring linear interpolation (lerp) for cursor glows, 3D tilt cards, and magnetic CTAs.
-- **Intersection-Driven Animation**: Heavy canvas engines and "slide-up" reveals are bound to `IntersectionObserver` to ensure zero CPU waste when elements are off-screen.
-- **Accessibility First**: Full support for `prefers-reduced-motion` and semantic HTML for screen-reader compatibility.
+NexVault replaces the friction of manual indexing with a proactive system. It maps the semantic meaning of your data, identifying hidden relationships between disparate ideas and surfacing them exactly when they become relevant.
 
 ---
 
-## 🛠️ Getting Started
+## Under the Hood
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher)
+To maintain a premium, cinematic experience, NexVault is built with a performance-first philosophy, avoiding heavy frameworks in favor of optimized vanilla implementations.
+
+### Engineering Focus
+- **Custom Canvas Engine**: A bespoke implementation for the Living Knowledge Graph and ambient particle systems, ensuring fluid 60fps motion.
+- **Bespoke Motion System**: A dedicated interaction layer utilizing linear interpolation (lerp) for cursor glows, 3D glass-tilt effects, and magnetic CTAs.
+- **Intersection-Driven Performance**: Heavy computations are bound to the `IntersectionObserver` API, pausing animations the moment they leave the viewport to preserve system resources.
+- **Accessibility**: Deep integration of `prefers-reduced-motion` and semantic HTML to ensure the experience is inclusive.
+
+### Stack
+- **Frontend**: HTML5, CSS3 (Custom Properties), Vanilla JavaScript (ES6+).
+- **Tooling**: Vite.
+
+---
+
+## Quick Start
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/nexvault.git
-   cd nexvault
-
-2. Install dependencies:
+```bash
+git clone https://github.com/yourusername/nexvault.git
+cd nexvault
 npm install
-3. Launch the development server:
 npm run dev
-4. Open http://localhost:5173 in your browser.
+```
 
----
-
-🗺️ Project Documentation
-
-- VISION.md: The philosophical foundation and design principles of NexVault.
-- ROADMAP.md: The path from MVP to full-scale cognitive OS.
-- CHANGELOG.md: A detailed log of every ticket and feature implementation.
+Open `http://localhost:5173` to experience the MVP.
 
 ---
 
 © 2030 NexVault Inc. | Built for the future of human intelligence.
-
-***
