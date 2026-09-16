@@ -825,19 +825,25 @@ class PremiumMotionSystem {
 class EarlyAccessModal {
     constructor() {
         this.modal = document.getElementById('early-access-modal');
-        this.openButton = document.getElementById('early-access-btn');
+        this.openButtons = document.querySelectorAll('#early-access-btn, [data-open-early-access]');
         this.closeButtons = this.modal?.querySelectorAll('[data-close-early-access]');
         this.form = document.getElementById('early-access-form');
         this.success = document.getElementById('early-access-success');
         this.emailInput = document.getElementById('early-access-email');
+        this.lastTrigger = null;
 
-        if (!this.modal || !this.openButton) return;
+        if (!this.modal || this.openButtons.length === 0) return;
 
         this.init();
     }
 
     init() {
-        this.openButton.addEventListener('click', () => this.open());
+        this.openButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.open(button);
+            });
+        });
 
         this.closeButtons?.forEach(button => {
             button.addEventListener('click', () => this.close());
@@ -862,7 +868,8 @@ class EarlyAccessModal {
         });
     }
 
-    open() {
+    open(triggerEl = null) {
+        this.lastTrigger = triggerEl;
         this.modal.classList.add('is-open');
         this.modal.setAttribute('aria-hidden', 'false');
 
@@ -874,7 +881,7 @@ class EarlyAccessModal {
     close() {
         this.modal.classList.remove('is-open');
         this.modal.setAttribute('aria-hidden', 'true');
-        this.openButton.focus();
+        (this.lastTrigger || document.getElementById('early-access-btn'))?.focus();
     }
 }
 
