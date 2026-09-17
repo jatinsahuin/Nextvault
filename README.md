@@ -4,7 +4,7 @@
 
 NextVault is an ambient intelligence layer designed to understand, connect, and synthesize everything you learn. It is not a note-taking app or a workspace—it is a cognitive extension built to ensure that no brilliant thought is ever lost to the noise of the information explosion.
 
-[Live Demo](#) | [Vision](VISION.md) | [Roadmap](ROADMAP.md) | [Changelog](CHANGELOG.md)
+[Vision](VISION.md) | [Roadmap](ROADMAP.md) | [Changelog](CHANGELOG.md)
 
 ---
 
