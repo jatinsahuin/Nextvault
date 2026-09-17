@@ -1,4 +1,4 @@
-# NexVault MVP Changelog
+# NextVault MVP Changelog
 
 ---
 
@@ -6,7 +6,7 @@
 
 Every completed ticket must satisfy one principle:
 
-> **If a feature doesn't make NexVault feel more intelligent, simpler, or more trustworthy, it probably doesn't belong.**
+> **If a feature doesn't make NextVault feel more intelligent, simpler, or more trustworthy, it probably doesn't belong.**
 
 We prioritize:
 
@@ -31,7 +31,7 @@ Replace non-functional hero buttons with meaningful interactions.
 ### Changes
 - Added custom smooth scrolling engine.
 - Added `InteractionManager`.
-- "Experience NexVault" scrolls to the product section.
+- "Experience NextVault" scrolls to the product section.
 - "Read the Manifesto" scrolls to the crisis section.
 - Improved easing for smoother scrolling.
 - Reduced scroll duration to improve responsiveness.
@@ -56,7 +56,7 @@ Replace the empty product placeholder with a premium interactive walkthrough.
 - Sequence only runs while visible (IntersectionObserver).
 
 ### Result
-Visitors immediately understand what NexVault actually does.
+Visitors immediately understand what NextVault actually does.
 
 ---
 
@@ -127,7 +127,7 @@ Improve navigation usability and make the website feel more premium.
 ### Changes
 - Added active navigation highlighting using IntersectionObserver.
 - Added premium smooth scrolling for all navigation links.
-- Clicking the NexVault logo now smoothly returns to the Hero section.
+- Clicking the NextVault logo now smoothly returns to the Hero section.
 - Added glowing active-state indicator beneath navigation links.
 - Preserved existing architecture without introducing external libraries.
 
@@ -179,11 +179,11 @@ Refine the pricing section so it feels like a real product offering rather than 
 
 ### Changes
 - Reworked the pricing cards for a clearer product hierarchy.
-- Established distinct tiers for different types of NexVault users.
+- Established distinct tiers for different types of NextVault users.
 - Added clearer feature differentiation between plans.
 - Highlighted the primary recommended tier.
 - Refined pricing CTAs to feel actionable and product-oriented.
-- Avoided inventing fixed pricing while NexVault is still in the early-access/MVP stage.
+- Avoided inventing fixed pricing while NextVault is still in the early-access/MVP stage.
 - Improved visual hierarchy, spacing, and card presentation.
 
 ## Ticket #009.2 — Final CTA

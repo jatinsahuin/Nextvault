@@ -1,6 +1,6 @@
 # The Roadmap: Evolution of Intelligence
 
-NexVault is not being built as a feature-set, but as a progression of cognitive capabilities. We are moving from a static interface to a proactive intelligence layer.
+NextVault is not being built as a feature-set, but as a progression of cognitive capabilities. We are moving from a static interface to a proactive intelligence layer.
 
 ## Level 1: The Foundation (Current)
 *Goal: Establish the visual and philosophical language of the product.*
