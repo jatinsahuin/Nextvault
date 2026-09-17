@@ -1,4 +1,4 @@
-# NexVault
+# NextVault
 
 **The Operating System for Human Knowledge.**
 
