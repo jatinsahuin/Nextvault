@@ -36,8 +36,8 @@ To maintain a premium, cinematic experience, NexVault is built with a performanc
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/nexvault.git
-cd nexvault
+git clone https://github.com/yourusername/NextVault.git
+cd NextVault
 npm install
 npm run dev
 ```

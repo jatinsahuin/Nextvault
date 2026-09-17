@@ -262,7 +262,7 @@ class InteractionManager {
         if (experienceBtn) {
             experienceBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                Utils.scrollToTarget('introducing-nexvault', 700); 
+                Utils.scrollToTarget('introducing-NextVault', 700);
             });
         }
 
