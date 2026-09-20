@@ -1,31 +1,45 @@
 # The Roadmap: Evolution of Intelligence
 
-NextVault is not being built as a feature-set, but as a progression of cognitive capabilities. We are moving from a static interface to a proactive intelligence layer.
+NextVault is not being built as a feature-set, but as a progression of cognitive capabilities. We are moving from a static interface to a proactive personal knowledge infrastructure.
 
-## Level 1: The Foundation (Current)
-*Goal: Establish the visual and philosophical language of the product.*
-- [x] Cinematic Landing Experience
-- [x] Living Knowledge Graph Visualization
-- [x] Premium Motion System (Tilt, Magnetic, Parallax)
-- [x] Core Brand Identity & Design System
+## Stage 1 — Foundation
+*Goal: Build the smallest technically sound foundation for knowledge capture and retrieval.*
+- [x] Cinematic Landing Experience (Vision Prototype)
+- [x] Brand Identity & Design System
+- [ ] Secure Authentication & User Isolation
+- [ ] Knowledge Ingestion Pipeline (PDF, Markdown, Text)
+- [ ] Basic Storage & Indexing
+- [ ] Semantic Search (Vector-based retrieval)
 
-## Level 2: The Ingestion Engine
-*Goal: Move from a mockup to a functional data pipeline.*
-- [ ] Local-first indexing of PDFs, Markdown, and Voice Notes.
-- [ ] Integration of lightweight local LLMs for initial semantic tagging.
-- [ ] Basic "Vault" management (upload, delete, organize).
-- [ ] High-performance canvas rendering for larger datasets (100+ nodes).
+## Stage 2 — Intelligence
+*Goal: Move from simple retrieval to contextual understanding.*
+- [ ] Contextual Retrieval (RAG)
+- [ ] Knowledge Relationship Extraction
+- [ ] AI-Powered Synthesis (Summaries and Themes)
+- [ ] Source-Aware Responses (Provenance)
+- [ ] Initial Metadata Filtering
 
-## Level 3: Proactive Synthesis
-*Goal: The system begins to "think" with the user.*
-- [ ] **Overnight Intelligence™**: Implementation of the nightly batch-processing engine.
-- [ ] **Automatic Connection Discovery**: The system suggests links between unrelated notes.
-- [ ] **Contradiction Detection**: Identifying when new information conflicts with a previous belief.
-- [ ] Contextual surfacing (bringing up a note based on current activity).
+## Stage 3 — Living Knowledge
+*Goal: Transform data into a structured, navigable web of meaning.*
+- [ ] Living Knowledge Graph Implementation (Backend)
+- [ ] Automatic Relationship Discovery
+- [ ] Knowledge Graph Visualization (Interactive/Functional)
+- [ ] Automatic Organization & Clustering
+- [ ] Persistent Entity Store
 
-## Level 4: The Cognitive Ecosystem
-*Goal: Scaling intelligence across time and people.*
-- [ ] **Temporal Navigation**: A "time-machine" view of how your knowledge evolved over years.
-- [ ] **Collective Intelligence**: Shared vaults for teams with permission-based graph merging.
-- [ ] **Cross-Platform Ambient Layer**: A system-wide overlay to capture and map thoughts in real-time.
-- [ ] Open Export standards to ensure absolute ownership of the user's graph.
+## Stage 4 — Overnight Intelligence™
+*Goal: The system develops knowledge autonomously in the background.*
+- [ ] Background Synthesis Jobs
+- [ ] Periodic Knowledge Analysis
+- [ ] Autonomous Insight Generation
+- [ ] Discovery of previously unnoticed connections
+- [ ] Knowledge Maintenance & Deduplication
+
+## Stage 5 — Knowledge Infrastructure
+*Goal: Scale intelligence into a comprehensive cognitive operating system.*
+- [ ] Multimodal Knowledge (Images, Audio, Video)
+- [ ] Advanced Personalization & Behavioral Learning
+- [ ] Collaborative Knowledge (Shared Vaults/Graph Merging)
+- [ ] External Intelligence Integrations
+- [ ] Local-First/Private Intelligence Processing
+- [ ] Developer API Ecosystem

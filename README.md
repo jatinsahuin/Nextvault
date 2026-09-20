@@ -4,11 +4,11 @@
 
 NextVault is an ambient intelligence layer designed to understand, connect, and synthesize everything you learn. It is not a note-taking app or a workspace—it is a cognitive extension built to ensure that no brilliant thought is ever lost to the noise of the information explosion.
 
-[Vision](VISION.md) | [Roadmap](ROADMAP.md) | [Changelog](CHANGELOG.md)
+[Vision & Constitution](VISION.md) | [Roadmap](ROADMAP.md) | [Engineering Guide](CLAUDE.md) | [Changelog](CHANGELOG.md)
 
 ---
 
-## The Core Idea
+## 🧠 The Core Idea
 
 Digital memory is currently a series of "buckets"—folders, tags, and databases. But knowledge is a web. 
 
@@ -16,23 +16,30 @@ NextVault replaces the friction of manual indexing with a proactive system. It m
 
 ---
 
-## Under the Hood
+## 🛠 Technical Architecture
 
-To maintain a premium, cinematic experience, NextVault is built with a performance-first philosophy, avoiding heavy frameworks in favor of optimized vanilla implementations.
+NextVault is built on a layered architecture to ensure intelligence can evolve without breaking the foundation:
 
-### Engineering Focus
-- **Custom Canvas Engine**: A bespoke implementation for the Living Knowledge Graph and ambient particle systems, ensuring fluid 60fps motion.
-- **Bespoke Motion System**: A dedicated interaction layer utilizing linear interpolation (lerp) for cursor glows, 3D glass-tilt effects, and magnetic CTAs.
-- **Intersection-Driven Performance**: Heavy computations are bound to the `IntersectionObserver` API, pausing animations the moment they leave the viewport to preserve system resources.
-- **Accessibility**: Deep integration of `prefers-reduced-motion` and semantic HTML to ensure the experience is inclusive.
-
-### Stack
-- **Frontend**: HTML5, CSS3 (Custom Properties), Vanilla JavaScript (ES6+).
-- **Tooling**: Vite.
+- **Application Layer:** A premium, minimal, and technically sophisticated user experience.
+- **Orchestration Layer:** Coordinates retrieval and intelligence processing.
+- **Intelligence Layer:** LLMs and reasoning models for synthesis and understanding.
+- **Retrieval Layer:** Hybrid semantic and keyword search infrastructure.
+- **Knowledge Layer:** A persistent semantic knowledge graph of entities and relationships.
 
 ---
 
-## Quick Start
+## 🚀 Current Status: Stage 1 (Foundation)
+
+We are currently in the **Foundation** stage, establishing the product identity and the initial technical framework.
+
+### Current Progress
+- [x] **Vision Prototype:** Cinematic landing experience with high-performance motion systems.
+- [x] **Product Constitution:** Defined architectural boundaries and development principles.
+- [ ] **Ingestion Engine:** (In Progress) Moving from mockup to functional data pipeline.
+
+---
+
+## 💻 Quick Start
 
 ### Installation
 ```bash
@@ -42,8 +49,8 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` to experience the MVP.
+Open `http://localhost:5173` to experience the vision prototype.
 
 ---
 
-© 2030 NextVault Inc. | Built for the future of human intelligence.
+© 2026 NextVault | Built for the future of human intelligence.
