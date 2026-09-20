@@ -43,7 +43,7 @@ We are currently in the **Foundation** stage, establishing the product identity 
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/NextVault.git
+git clone https://github.com/jatinsahuin/NextVault.git
 cd NextVault
 npm install
 npm run dev
