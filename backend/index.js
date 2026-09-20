@@ -1,7 +1,11 @@
 const fastify = require('fastify')({ logger: true });
 const multipart = require('@fastify/multipart');
+const cors = require('@fastify/cors');
 const { createSource, getSourceStatus, processIngestion } = require('./services/ingestion/ingestion');
 
+fastify.register(cors, {
+    origin: true // In production, replace with actual frontend domain
+});
 fastify.register(multipart);
 
 // Mock User ID for Vertical Slice (In production, this comes from Auth)
