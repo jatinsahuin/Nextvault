@@ -1,5 +1,9 @@
 // Core Interaction Architecture
 
+import { api } from './api.js';
+import { IngestionUI } from './ingestion-ui.js';
+
+// Core Interaction Architecture
 'use strict';
 
 const CONFIG = {
@@ -893,13 +897,16 @@ document.addEventListener('DOMContentLoaded', () => {
     new ScrollManager();
     new RevealEngine();
     new DataVisualizations();
-    new InteractionManager(); 
+    new InteractionManager();
     new NavigationObserver();
-    new MockupSequence(); 
+    new MockupSequence();
     new MemoryEngineAnimation();
     new PremiumMotionSystem();
     new EarlyAccessModal();
-    
+
+    // Connect the steering wheel
+    new IngestionUI();
+
     // Canvas Engines
     new CanvasParticleSystem('ambient-canvas', 'particles');
     new LivingKnowledgeGraph('knowledge-graph-canvas'); // <-- TICKET #003 REPLACEMENT
