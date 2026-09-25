@@ -1,9 +1,10 @@
-const { Pool } = require('pg');
-const { v4: uuidv4 } = require('uuid');
-const crypto = require('crypto');
-const { LocalStorageProvider } = require('../providers/storage/storage');
-const { ExtractorFactory } = require('./extractor');
+import pg from 'pg';
+import { v4 as uuidv4 } from 'uuid';
+import crypto from 'crypto';
+import { LocalStorageProvider } from '../providers/storage/storage.js';
+import { ExtractorFactory } from './extractor.js';
 
+const { Pool } = pg;
 const pool = new Pool({
     user: process.env.DB_USER || 'postgres',
     host: process.env.DB_HOST || 'localhost',
@@ -14,7 +15,7 @@ const pool = new Pool({
 
 const storage = new LocalStorageProvider();
 
-async function createSource(userId, file, metadata = {}) {
+export async function createSource(userId, file, metadata = {}) {
     const fileBuffer = await file.toBuffer();
     const checksum = crypto.createHash('sha256').update(fileBuffer).digest('hex');
     const sourceId = uuidv4();
@@ -38,7 +39,7 @@ async function createSource(userId, file, metadata = {}) {
     return { sourceId, status: 'RECEIVED' };
 }
 
-async function getSourceStatus(sourceId) {
+export async function getSourceStatus(sourceId) {
     const res = await pool.query(
         `SELECT status FROM ingestion_jobs WHERE source_id = $1`,
         [sourceId]
@@ -47,7 +48,7 @@ async function getSourceStatus(sourceId) {
     return res.rows[0].status;
 }
 
-async function processIngestion(sourceId) {
+export async function processIngestion(sourceId) {
     try {
         // Update state to VALIDATING
         await pool.query(`UPDATE ingestion_jobs SET status = 'VALIDATING', started_at = NOW() WHERE source_id = $1`, [sourceId]);
@@ -75,5 +76,3 @@ async function processIngestion(sourceId) {
         await pool.query(`UPDATE ingestion_jobs SET status = 'FAILED', error_message = $1 WHERE source_id = $2`, [err.message, sourceId]);
     }
 }
-
-module.exports = { createSource, getSourceStatus, processIngestion };
