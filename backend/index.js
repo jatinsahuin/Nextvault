@@ -1,25 +1,22 @@
-const fastify = require('fastify')({ logger: true });
-const multipart = require('@fastify/multipart');
-const cors = require('@fastify/cors');
-const { createSource, getSourceStatus, processIngestion } = require('./services/ingestion/ingestion');
+import Fastify from 'fastify';
+import multipart from '@fastify/multipart';
+import cors from '@fastify/cors';
+import { createSource, getSourceStatus, processIngestion } from './src/services/ingestion/ingestion.js';
+
+const fastify = Fastify({ logger: true });
 
 fastify.register(cors, {
     origin: true // In production, replace with actual frontend domain
 });
 fastify.register(multipart);
 
-// Mock User ID for Vertical Slice (In production, this comes from Auth)
-const MOCK_USER_ID = '00000000-0000-0000-0000-000000000000';
-
 fastify.post('/sources', async (request, reply) => {
     const data = await request.file();
     if (!data) return reply.status(400).send({ error: 'No file uploaded' });
 
     try {
-        const { sourceId, status } = await createSource(MOCK_USER_ID, data, {});
+        const { sourceId, status } = await createSource('00000000-0000-0000-0000-000000000000', data, {});
 
-        // Trigger async processing (In production, this goes to a queue like BullMQ)
-        // For the vertical slice, we trigger it as a background promise
         processIngestion(sourceId).catch(err => console.error('Background processing error:', err));
 
         return reply.status(202).send({
